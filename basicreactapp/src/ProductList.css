@@ -1,0 +1,9 @@
+.ProductList {
+    width: 70%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
