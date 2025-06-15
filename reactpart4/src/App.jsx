@@ -1,11 +1,15 @@
-import "./App.css";
-import LudoBoard from "./LudoBoard";
+import React from "react";
+import Lottery from "./Lottery";
+import { sum } from "./helper";
 
 function App() {
+  const winCondition = (ticket) => sum(ticket) === 13;
+
   return (
-    <>
-      <LudoBoard />
-    </>
+    <div>
+      <h1>Lottery Game</h1>
+      <Lottery n={3} winningCondition={winCondition} />
+    </div>
   );
 }
 
